@@ -38,7 +38,7 @@
 		8DC3EF83273AD51400CB518D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF82273AD51400CB518D /* Response.swift */; };
 		8DC3EF86273AD52800CB518D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF85273AD52800CB518D /* APIRequest.swift */; };
 		8DC76B8F265424F00018D837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76B8E265424F00018D837 /* AppDelegate.swift */; };
-		8DC76B93265424F00018D837 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76B92265424F00018D837 /* HomeViewController.swift */; };
+		8DC76B93265424F00018D837 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76B92265424F00018D837 /* SignupViewController.swift */; };
 		8DC76B96265424F00018D837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76B94265424F00018D837 /* Main.storyboard */; };
 		8DC76B98265424F10018D837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76B97265424F10018D837 /* Assets.xcassets */; };
 		8DC76B9B265424F10018D837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76B99265424F10018D837 /* LaunchScreen.storyboard */; };
@@ -85,7 +85,7 @@
 		8DC3EF85273AD52800CB518D /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		8DC76B8B265424F00018D837 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC76B8E265424F00018D837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DC76B92265424F00018D837 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8DC76B92265424F00018D837 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		8DC76B95265424F00018D837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DC76B97265424F10018D837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC76B9A265424F10018D837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			children = (
 				8DC3EF44273A76E100CB518D /* Model */,
 				8DC3EF3C273A76D500CB518D /* Views */,
-				8DC76B92265424F00018D837 /* HomeViewController.swift */,
+				8DC76B92265424F00018D837 /* SignupViewController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 			children = (
 				8D85FB6D273E659300201E7E /* Model */,
 				8D85FB6C273E654100201E7E /* Views */,
-				8DC3EF4D273A773F00CB518D /* MapViewController.swift */,
 				8DC3EF45273A76E100CB518D /* GoogleDataProvider.swift */,
+				8DC3EF4D273A773F00CB518D /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 				8DC3EF40273A76D500CB518D /* MarkerInfoView.swift in Sources */,
 				8DC76BBC2654316F0018D837 /* APIKey.swift in Sources */,
 				8DC3EF49273A76E100CB518D /* GooglePlace.swift in Sources */,
-				8DC76B93265424F00018D837 /* HomeViewController.swift in Sources */,
+				8DC76B93265424F00018D837 /* SignupViewController.swift in Sources */,
 				8DC3EF48273A76E100CB518D /* GoogleDataProvider.swift in Sources */,
 				8DC3EF4F273A773F00CB518D /* MapViewController.swift in Sources */,
 				8DC3EF86273AD52800CB518D /* APIRequest.swift in Sources */,

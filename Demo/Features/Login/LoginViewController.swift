@@ -122,13 +122,6 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             //Cell type TextField
             let cell = tableView.dequeueReusableCell(withIdentifier: "TextInputLoginCell", for: indexPath) as! TextInputLoginCell
             
-//            if let _data = data as? InputData {
-//                if let _title = _data.title {
-//                    cell.titleLabel.text = _title
-//                }
-//            }
-            
-            //cell.inputField.placeholder = (data as! InputData).placeholder
             cell.backgroundColor = kBgColor
             cell.inputField.attributedPlaceholder = NSAttributedString(
                 string: (data as! InputData).placeholder ?? "",
@@ -172,7 +165,10 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             
             //action on button
             cell.onAction = { button in
-                print("button action:\(button.titleLabel?.text)")
+                print("login button action")
+                let storyboard: UIStoryboard = UIStoryboard.init(name: "Main",bundle: nil);
+                let viewController = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+                self.navigationController?.pushViewController(viewController, animated: true)
             }
             
             return cell
