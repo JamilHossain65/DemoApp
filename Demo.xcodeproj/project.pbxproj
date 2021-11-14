@@ -10,16 +10,17 @@
 		8A4ACB7DA1DD67E99FC2F298 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AEF0974D26B635898ADFDA /* Pods_Demo.framework */; };
 		8D36BB5A2740FC3100119611 /* SoundInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BB592740FC3100119611 /* SoundInfo.swift */; };
 		8D36BB7627415CF500119611 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D36BB7527415CF500119611 /* GoogleService-Info.plist */; };
-		8D36BB7D27415D2F00119611 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BB7B27415D2F00119611 /* FirebaseManager.swift */; };
 		8D36BBC227416B1400119611 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BBC127416B1400119611 /* LoginModel.swift */; };
 		8D36BBE82741720100119611 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BBE72741720100119611 /* SignupModel.swift */; };
-		8D608D07273BEFB400D3D8A4 /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */; };
-		8D608D08273BEFB400D3D8A4 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */; };
+		8D36BC442741991000119611 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D36BC3C2741990F00119611 /* DataCell.xib */; };
+		8D36BC452741991000119611 /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D36BC3D2741990F00119611 /* TextInputCell.xib */; };
+		8D36BC462741991000119611 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BC3E2741990F00119611 /* DataCell.swift */; };
+		8D36BC472741991000119611 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BC3F2741990F00119611 /* ButtonCell.swift */; };
+		8D36BC482741991000119611 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BC402741991000119611 /* FooterCell.swift */; };
+		8D36BC492741991000119611 /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D36BC412741991000119611 /* FooterCell.xib */; };
+		8D36BC4A2741991000119611 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D36BC422741991000119611 /* ButtonCell.xib */; };
+		8D36BC4B2741991000119611 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BC432741991000119611 /* TextInputCell.swift */; };
 		8D608D13273BF30B00D3D8A4 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D12273BF30B00D3D8A4 /* InputData.swift */; };
-		8D608D17273C029200D3D8A4 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D15273C029200D3D8A4 /* ButtonCell.swift */; };
-		8D608D18273C029200D3D8A4 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D16273C029200D3D8A4 /* ButtonCell.xib */; };
-		8D608D47273C219B00D3D8A4 /* FooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D45273C219B00D3D8A4 /* FooterCell.swift */; };
-		8D608D48273C219B00D3D8A4 /* FooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D46273C219B00D3D8A4 /* FooterCell.xib */; };
 		8D608D4F273C819600D3D8A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D4E273C819600D3D8A4 /* LoginViewController.swift */; };
 		8D608D5B273C862500D3D8A4 /* FooterLoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D55273C862400D3D8A4 /* FooterLoginCell.xib */; };
 		8D608D5C273C862500D3D8A4 /* FooterLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D56273C862400D3D8A4 /* FooterLoginCell.swift */; };
@@ -29,7 +30,6 @@
 		8D608D60273C862500D3D8A4 /* TextInputLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D5A273C862500D3D8A4 /* TextInputLoginCell.swift */; };
 		8D6A1EB2273FE90D0050D7BD /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6A1EB1273FE90D0050D7BD /* PlayerView.xib */; };
 		8D6A1EB6273FED620050D7BD /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A1EB5273FED620050D7BD /* PlayerView.swift */; };
-		8D85FB7B273E698800201E7E /* AudioKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D85FB7A273E698800201E7E /* AudioKey.swift */; };
 		8D85FB92273EA0E800201E7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D85FB91273EA0E800201E7E /* MapViewController.swift */; };
 		8D8694B6273D813C009070FE /* TextLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8694B4273D813C009070FE /* TextLabelCell.swift */; };
 		8D8694B7273D813C009070FE /* TextLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8694B5273D813C009070FE /* TextLabelCell.xib */; };
@@ -40,21 +40,12 @@
 		8DC3EF49273A76E100CB518D /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF46273A76E100CB518D /* GooglePlace.swift */; };
 		8DC3EF4A273A76E100CB518D /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF47273A76E100CB518D /* PlaceMarker.swift */; };
 		8DC3EF7C273AD1A600CB518D /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF7A273AD1A600CB518D /* AudioManager.swift */; };
-		8DC3EF7D273AD1A600CB518D /* SpeechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF7B273AD1A600CB518D /* SpeechModel.swift */; };
-		8DC3EF80273AD49C00CB518D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF7F273AD49C00CB518D /* Errors.swift */; };
-		8DC3EF83273AD51400CB518D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF82273AD51400CB518D /* Response.swift */; };
-		8DC3EF86273AD52800CB518D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF85273AD52800CB518D /* APIRequest.swift */; };
 		8DC76B8F265424F00018D837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76B8E265424F00018D837 /* AppDelegate.swift */; };
 		8DC76B93265424F00018D837 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76B92265424F00018D837 /* SignupViewController.swift */; };
 		8DC76B96265424F00018D837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76B94265424F00018D837 /* Main.storyboard */; };
 		8DC76B98265424F10018D837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76B97265424F10018D837 /* Assets.xcassets */; };
 		8DC76B9B265424F10018D837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76B99265424F10018D837 /* LaunchScreen.storyboard */; };
-		8DC76BBA2654316F0018D837 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76BB12654316F0018D837 /* Reachability.swift */; };
-		8DC76BBC2654316F0018D837 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76BB52654316F0018D837 /* APIKey.swift */; };
-		8DC76BBD2654316F0018D837 /* APIUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76BB62654316F0018D837 /* APIUrl.swift */; };
 		8DC76BC02654316F0018D837 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76BB92654316F0018D837 /* Utils.swift */; };
-		8DC76BCB26543CDA0018D837 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC76BC926543CD90018D837 /* DataCell.swift */; };
-		8DC76BCC26543CDA0018D837 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC76BCA26543CDA0018D837 /* DataCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,16 +54,17 @@
 		46AEF0974D26B635898ADFDA /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D36BB592740FC3100119611 /* SoundInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInfo.swift; sourceTree = "<group>"; };
 		8D36BB7527415CF500119611 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8D36BB7B27415D2F00119611 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		8D36BBC127416B1400119611 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		8D36BBE72741720100119611 /* SignupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
-		8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
-		8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
+		8D36BC3C2741990F00119611 /* DataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
+		8D36BC3D2741990F00119611 /* TextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
+		8D36BC3E2741990F00119611 /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		8D36BC3F2741990F00119611 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		8D36BC402741991000119611 /* FooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
+		8D36BC412741991000119611 /* FooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
+		8D36BC422741991000119611 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		8D36BC432741991000119611 /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
 		8D608D12273BF30B00D3D8A4 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
-		8D608D15273C029200D3D8A4 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
-		8D608D16273C029200D3D8A4 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
-		8D608D45273C219B00D3D8A4 /* FooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterCell.swift; sourceTree = "<group>"; };
-		8D608D46273C219B00D3D8A4 /* FooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterCell.xib; sourceTree = "<group>"; };
 		8D608D4E273C819600D3D8A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8D608D55273C862400D3D8A4 /* FooterLoginCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterLoginCell.xib; sourceTree = "<group>"; };
 		8D608D56273C862400D3D8A4 /* FooterLoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterLoginCell.swift; sourceTree = "<group>"; };
@@ -82,7 +74,6 @@
 		8D608D5A273C862500D3D8A4 /* TextInputLoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputLoginCell.swift; sourceTree = "<group>"; };
 		8D6A1EB1273FE90D0050D7BD /* PlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
 		8D6A1EB5273FED620050D7BD /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		8D85FB7A273E698800201E7E /* AudioKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioKey.swift; sourceTree = "<group>"; };
 		8D85FB91273EA0E800201E7E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8D8694B4273D813C009070FE /* TextLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabelCell.swift; sourceTree = "<group>"; };
 		8D8694B5273D813C009070FE /* TextLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextLabelCell.xib; sourceTree = "<group>"; };
@@ -93,10 +84,6 @@
 		8DC3EF46273A76E100CB518D /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		8DC3EF47273A76E100CB518D /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		8DC3EF7A273AD1A600CB518D /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
-		8DC3EF7B273AD1A600CB518D /* SpeechModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechModel.swift; sourceTree = "<group>"; };
-		8DC3EF7F273AD49C00CB518D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		8DC3EF82273AD51400CB518D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		8DC3EF85273AD52800CB518D /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		8DC76B8B265424F00018D837 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC76B8E265424F00018D837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC76B92265424F00018D837 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -104,12 +91,7 @@
 		8DC76B97265424F10018D837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC76B9A265424F10018D837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC76B9C265424F10018D837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DC76BB12654316F0018D837 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		8DC76BB52654316F0018D837 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
-		8DC76BB62654316F0018D837 /* APIUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrl.swift; sourceTree = "<group>"; };
 		8DC76BB92654316F0018D837 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		8DC76BC926543CD90018D837 /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
-		8DC76BCA26543CDA0018D837 /* DataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,14 +112,6 @@
 				46AEF0974D26B635898ADFDA /* Pods_Demo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8D36BB7827415D2F00119611 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				8D36BB7B27415D2F00119611 /* FirebaseManager.swift */,
-			);
-			path = Firebase;
 			sourceTree = "<group>";
 		};
 		8D608D52273C85BB00D3D8A4 /* Login */ = {
@@ -188,6 +162,7 @@
 			children = (
 				8D85FB6D273E659300201E7E /* Model */,
 				8D85FB6C273E654100201E7E /* Views */,
+				8DC3EF7A273AD1A600CB518D /* AudioManager.swift */,
 				8D85FB91273EA0E800201E7E /* MapViewController.swift */,
 			);
 			path = Map;
@@ -219,7 +194,14 @@
 		8DC3EF3C273A76D500CB518D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8DC76BC826543CD90018D837 /* Cell */,
+				8D36BC3F2741990F00119611 /* ButtonCell.swift */,
+				8D36BC422741991000119611 /* ButtonCell.xib */,
+				8D36BC3E2741990F00119611 /* DataCell.swift */,
+				8D36BC3C2741990F00119611 /* DataCell.xib */,
+				8D36BC402741991000119611 /* FooterCell.swift */,
+				8D36BC412741991000119611 /* FooterCell.xib */,
+				8D36BC432741991000119611 /* TextInputCell.swift */,
+				8D36BC3D2741990F00119611 /* TextInputCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,26 +213,6 @@
 				8D36BBE72741720100119611 /* SignupModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		8DC3EF4C273A773F00CB518D /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				8D608D52273C85BB00D3D8A4 /* Login */,
-				8D85FB6A273E63A400201E7E /* Signup */,
-				8D85FB6B273E63A400201E7E /* Map */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		8DC3EF79273AD1A600CB518D /* Speech */ = {
-			isa = PBXGroup;
-			children = (
-				8DC3EF7A273AD1A600CB518D /* AudioManager.swift */,
-				8DC3EF7B273AD1A600CB518D /* SpeechModel.swift */,
-				8D85FB7A273E698800201E7E /* AudioKey.swift */,
-			);
-			path = Speech;
 			sourceTree = "<group>";
 		};
 		8DC76B82265424F00018D837 = {
@@ -274,10 +236,9 @@
 		8DC76B8D265424F00018D837 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				8DC76BB42654316F0018D837 /* API */,
-				8DC3EF79273AD1A600CB518D /* Speech */,
-				8D36BB7827415D2F00119611 /* Firebase */,
-				8DC3EF4C273A773F00CB518D /* Features */,
+				8D608D52273C85BB00D3D8A4 /* Login */,
+				8D85FB6A273E63A400201E7E /* Signup */,
+				8D85FB6B273E63A400201E7E /* Map */,
 				8DC76B8E265424F00018D837 /* AppDelegate.swift */,
 				8DC76BB92654316F0018D837 /* Utils.swift */,
 				8DC76B94265424F00018D837 /* Main.storyboard */,
@@ -287,34 +248,6 @@
 				8DC76B9C265424F10018D837 /* Info.plist */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		8DC76BB42654316F0018D837 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				8DC3EF85273AD52800CB518D /* APIRequest.swift */,
-				8DC3EF82273AD51400CB518D /* Response.swift */,
-				8DC76BB12654316F0018D837 /* Reachability.swift */,
-				8DC76BB52654316F0018D837 /* APIKey.swift */,
-				8DC76BB62654316F0018D837 /* APIUrl.swift */,
-				8DC3EF7F273AD49C00CB518D /* Errors.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		8DC76BC826543CD90018D837 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */,
-				8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */,
-				8D608D15273C029200D3D8A4 /* ButtonCell.swift */,
-				8D608D16273C029200D3D8A4 /* ButtonCell.xib */,
-				8D608D45273C219B00D3D8A4 /* FooterCell.swift */,
-				8D608D46273C219B00D3D8A4 /* FooterCell.xib */,
-				8DC76BC926543CD90018D837 /* DataCell.swift */,
-				8DC76BCA26543CDA0018D837 /* DataCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		C2CF2F05E4D9368ED4245958 /* Pods */ = {
@@ -387,19 +320,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6A1EB2273FE90D0050D7BD /* PlayerView.xib in Resources */,
-				8DC76BCC26543CDA0018D837 /* DataCell.xib in Resources */,
-				8D608D07273BEFB400D3D8A4 /* TextInputCell.xib in Resources */,
 				8DC76B9B265424F10018D837 /* LaunchScreen.storyboard in Resources */,
 				8DC3EF42273A76D500CB518D /* MarkerInfoView.xib in Resources */,
-				8D608D18273C029200D3D8A4 /* ButtonCell.xib in Resources */,
 				8D608D5E273C862500D3D8A4 /* LogoCell.xib in Resources */,
 				8D608D5B273C862500D3D8A4 /* FooterLoginCell.xib in Resources */,
+				8D36BC442741991000119611 /* DataCell.xib in Resources */,
 				8D8694B7273D813C009070FE /* TextLabelCell.xib in Resources */,
+				8D36BC452741991000119611 /* TextInputCell.xib in Resources */,
 				8DC76B98265424F10018D837 /* Assets.xcassets in Resources */,
-				8D608D48273C219B00D3D8A4 /* FooterCell.xib in Resources */,
 				8DC76B96265424F00018D837 /* Main.storyboard in Resources */,
 				8D608D5D273C862500D3D8A4 /* TextInputLoginCell.xib in Resources */,
+				8D36BC4A2741991000119611 /* ButtonCell.xib in Resources */,
 				8D36BB7627415CF500119611 /* GoogleService-Info.plist in Resources */,
+				8D36BC492741991000119611 /* FooterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,35 +404,26 @@
 			files = (
 				8D608D4F273C819600D3D8A4 /* LoginViewController.swift in Sources */,
 				8DC3EF41273A76D500CB518D /* UIViewExtension.swift in Sources */,
-				8D608D17273C029200D3D8A4 /* ButtonCell.swift in Sources */,
 				8D8694B6273D813C009070FE /* TextLabelCell.swift in Sources */,
 				8D608D60273C862500D3D8A4 /* TextInputLoginCell.swift in Sources */,
 				8D36BB5A2740FC3100119611 /* SoundInfo.swift in Sources */,
 				8DC3EF7C273AD1A600CB518D /* AudioManager.swift in Sources */,
 				8DC3EF40273A76D500CB518D /* MarkerInfoView.swift in Sources */,
-				8DC76BBC2654316F0018D837 /* APIKey.swift in Sources */,
 				8DC3EF49273A76E100CB518D /* GooglePlace.swift in Sources */,
 				8D6A1EB6273FED620050D7BD /* PlayerView.swift in Sources */,
 				8DC76B93265424F00018D837 /* SignupViewController.swift in Sources */,
-				8D36BB7D27415D2F00119611 /* FirebaseManager.swift in Sources */,
+				8D36BC462741991000119611 /* DataCell.swift in Sources */,
+				8D36BC4B2741991000119611 /* TextInputCell.swift in Sources */,
 				8DC3EF48273A76E100CB518D /* GoogleDataProvider.swift in Sources */,
-				8DC3EF86273AD52800CB518D /* APIRequest.swift in Sources */,
-				8D608D08273BEFB400D3D8A4 /* TextInputCell.swift in Sources */,
 				8DC76B8F265424F00018D837 /* AppDelegate.swift in Sources */,
-				8DC76BBA2654316F0018D837 /* Reachability.swift in Sources */,
-				8DC3EF80273AD49C00CB518D /* Errors.swift in Sources */,
 				8DC76BC02654316F0018D837 /* Utils.swift in Sources */,
-				8DC76BCB26543CDA0018D837 /* DataCell.swift in Sources */,
+				8D36BC482741991000119611 /* FooterCell.swift in Sources */,
 				8D36BBC227416B1400119611 /* LoginModel.swift in Sources */,
-				8DC3EF83273AD51400CB518D /* Response.swift in Sources */,
 				8D608D5F273C862500D3D8A4 /* LogoCell.swift in Sources */,
-				8D608D47273C219B00D3D8A4 /* FooterCell.swift in Sources */,
-				8D85FB7B273E698800201E7E /* AudioKey.swift in Sources */,
-				8DC3EF7D273AD1A600CB518D /* SpeechModel.swift in Sources */,
 				8D608D5C273C862500D3D8A4 /* FooterLoginCell.swift in Sources */,
 				8DC3EF4A273A76E100CB518D /* PlaceMarker.swift in Sources */,
-				8DC76BBD2654316F0018D837 /* APIUrl.swift in Sources */,
 				8D608D13273BF30B00D3D8A4 /* InputData.swift in Sources */,
+				8D36BC472741991000119611 /* ButtonCell.swift in Sources */,
 				8D85FB92273EA0E800201E7E /* MapViewController.swift in Sources */,
 				8D36BBE82741720100119611 /* SignupModel.swift in Sources */,
 			);
