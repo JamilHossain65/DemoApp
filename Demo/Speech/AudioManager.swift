@@ -13,6 +13,13 @@ protocol AudioManagerDelegate {
     func recordDidFinish()
 }
 
+//current time stamp in milliseconds
+extension Date {
+    static var timeStamp: Int64 {
+        return Int64(Date().timeIntervalSince1970 * 1000) //milliseconds
+    }
+}
+
 class AudioManager: NSObject,AVAudioRecorderDelegate {
     //var recordButton : UIButton!
     var recordingSession: AVAudioSession!
@@ -67,9 +74,14 @@ class AudioManager: NSObject,AVAudioRecorderDelegate {
         }
     }
     
-    func soundPlayer(_ playerStatus: PlayerStatus) {
-        let url = getDocumentsDirectory().appendingPathComponent("recording.flac")
-        print("play url::\(url)")
+    func soundPlayer(id:Int64? = 0, _ playerStatus: PlayerStatus) {
+        //let url = getDocumentsDirectory().appendingPathComponent("recording1636816197506.flac")
+        
+        let url = getDocumentsDirectory().appendingPathComponent("recording\(id!).flac")
+        print("url::\(url)")
+//        let urls = AudioManager.allRecordedData()
+//        let filteredUrl = urls?.filter { $0 == url }
+//        print("url play::\(filteredUrl)")
         
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -93,13 +105,13 @@ class AudioManager: NSObject,AVAudioRecorderDelegate {
             }
         } catch let error {
             print(error.localizedDescription)
+            showAlertOkay(title: "Error!", message: "File not exist.", completion: { _ in })
         }
     }
     
-    func startRecording() {
+    func startRecording(id:Int64? = 0) {
         print("startRecording")
-        
-        let audioFilename = getDocumentsDirectory().appendingPathComponent("recording.flac")
+        let audioFilename = getDocumentsDirectory().appendingPathComponent("recording\(id!).flac")
 
         let settings = [
             AVFormatIDKey: Int(kAudioFormatFLAC),
@@ -120,8 +132,25 @@ class AudioManager: NSObject,AVAudioRecorderDelegate {
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        //print("path::\(paths)")
-        return paths[0]
+        
+        for path in paths{
+            print("path::\(path)")
+        }
+        
+        print("allRecordedData::\(AudioManager.allRecordedData())")
+        
+       return paths[0]
+    }
+    
+    class func allRecordedData() -> [URL]? {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        do {
+            let directoryContents = try FileManager.default.contentsOfDirectory(at: paths[0], includingPropertiesForKeys: nil)
+            return directoryContents.filter{ $0.pathExtension == "flac" }
+        } catch {
+            return nil
+        }
     }
     
     func finishRecording(success: Bool) {
@@ -133,10 +162,10 @@ class AudioManager: NSObject,AVAudioRecorderDelegate {
         }
     }
     
-    @objc func recordTapped() {
+    @objc func recordTapped(id:Int64) {
         print("recordTapped")
         if audioRecorder == nil {
-            startRecording()
+            startRecording(id:id)
         } else {
             finishRecording(success: true)
         }

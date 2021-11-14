@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A4ACB7DA1DD67E99FC2F298 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AEF0974D26B635898ADFDA /* Pods_Demo.framework */; };
+		8D36BB5A2740FC3100119611 /* SoundInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BB592740FC3100119611 /* SoundInfo.swift */; };
 		8D608D07273BEFB400D3D8A4 /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */; };
 		8D608D08273BEFB400D3D8A4 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */; };
 		8D608D13273BF30B00D3D8A4 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D12273BF30B00D3D8A4 /* InputData.swift */; };
@@ -22,7 +23,10 @@
 		8D608D5E273C862500D3D8A4 /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D58273C862400D3D8A4 /* LogoCell.xib */; };
 		8D608D5F273C862500D3D8A4 /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D59273C862400D3D8A4 /* LogoCell.swift */; };
 		8D608D60273C862500D3D8A4 /* TextInputLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D5A273C862500D3D8A4 /* TextInputLoginCell.swift */; };
+		8D6A1EB2273FE90D0050D7BD /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D6A1EB1273FE90D0050D7BD /* PlayerView.xib */; };
+		8D6A1EB6273FED620050D7BD /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A1EB5273FED620050D7BD /* PlayerView.swift */; };
 		8D85FB7B273E698800201E7E /* AudioKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D85FB7A273E698800201E7E /* AudioKey.swift */; };
+		8D85FB92273EA0E800201E7E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D85FB91273EA0E800201E7E /* MapViewController.swift */; };
 		8D8694B6273D813C009070FE /* TextLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8694B4273D813C009070FE /* TextLabelCell.swift */; };
 		8D8694B7273D813C009070FE /* TextLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D8694B5273D813C009070FE /* TextLabelCell.xib */; };
 		8DC3EF40273A76D500CB518D /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF3D273A76D500CB518D /* MarkerInfoView.swift */; };
@@ -31,7 +35,6 @@
 		8DC3EF48273A76E100CB518D /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF45273A76E100CB518D /* GoogleDataProvider.swift */; };
 		8DC3EF49273A76E100CB518D /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF46273A76E100CB518D /* GooglePlace.swift */; };
 		8DC3EF4A273A76E100CB518D /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF47273A76E100CB518D /* PlaceMarker.swift */; };
-		8DC3EF4F273A773F00CB518D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF4D273A773F00CB518D /* MapViewController.swift */; };
 		8DC3EF7C273AD1A600CB518D /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF7A273AD1A600CB518D /* AudioManager.swift */; };
 		8DC3EF7D273AD1A600CB518D /* SpeechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF7B273AD1A600CB518D /* SpeechModel.swift */; };
 		8DC3EF80273AD49C00CB518D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EF7F273AD49C00CB518D /* Errors.swift */; };
@@ -54,6 +57,7 @@
 		25945484BD0807FAB333FA54 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		3DB7E7E06AAA3B5598DF0EF2 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		46AEF0974D26B635898ADFDA /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D36BB592740FC3100119611 /* SoundInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInfo.swift; sourceTree = "<group>"; };
 		8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
 		8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
 		8D608D12273BF30B00D3D8A4 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
@@ -68,7 +72,10 @@
 		8D608D58273C862400D3D8A4 /* LogoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
 		8D608D59273C862400D3D8A4 /* LogoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
 		8D608D5A273C862500D3D8A4 /* TextInputLoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputLoginCell.swift; sourceTree = "<group>"; };
+		8D6A1EB1273FE90D0050D7BD /* PlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		8D6A1EB5273FED620050D7BD /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		8D85FB7A273E698800201E7E /* AudioKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioKey.swift; sourceTree = "<group>"; };
+		8D85FB91273EA0E800201E7E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8D8694B4273D813C009070FE /* TextLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabelCell.swift; sourceTree = "<group>"; };
 		8D8694B5273D813C009070FE /* TextLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextLabelCell.xib; sourceTree = "<group>"; };
 		8DC3EF3D273A76D500CB518D /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
@@ -77,7 +84,6 @@
 		8DC3EF45273A76E100CB518D /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		8DC3EF46273A76E100CB518D /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		8DC3EF47273A76E100CB518D /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
-		8DC3EF4D273A773F00CB518D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8DC3EF7A273AD1A600CB518D /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		8DC3EF7B273AD1A600CB518D /* SpeechModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechModel.swift; sourceTree = "<group>"; };
 		8DC3EF7F273AD49C00CB518D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -165,8 +171,7 @@
 			children = (
 				8D85FB6D273E659300201E7E /* Model */,
 				8D85FB6C273E654100201E7E /* Views */,
-				8DC3EF45273A76E100CB518D /* GoogleDataProvider.swift */,
-				8DC3EF4D273A773F00CB518D /* MapViewController.swift */,
+				8D85FB91273EA0E800201E7E /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -174,9 +179,11 @@
 		8D85FB6C273E654100201E7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D6A1EB5273FED620050D7BD /* PlayerView.swift */,
+				8D6A1EB1273FE90D0050D7BD /* PlayerView.xib */,
+				8DC3EF3D273A76D500CB518D /* MarkerInfoView.swift */,
 				8DC3EF3F273A76D500CB518D /* MarkerInfoView.xib */,
 				8DC3EF3E273A76D500CB518D /* UIViewExtension.swift */,
-				8DC3EF3D273A76D500CB518D /* MarkerInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,8 +191,10 @@
 		8D85FB6D273E659300201E7E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8DC3EF45273A76E100CB518D /* GoogleDataProvider.swift */,
 				8DC3EF46273A76E100CB518D /* GooglePlace.swift */,
 				8DC3EF47273A76E100CB518D /* PlaceMarker.swift */,
+				8D36BB592740FC3100119611 /* SoundInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6A1EB2273FE90D0050D7BD /* PlayerView.xib in Resources */,
 				8DC76BCC26543CDA0018D837 /* DataCell.xib in Resources */,
 				8D608D07273BEFB400D3D8A4 /* TextInputCell.xib in Resources */,
 				8DC76B9B265424F10018D837 /* LaunchScreen.storyboard in Resources */,
@@ -443,13 +453,14 @@
 				8D608D17273C029200D3D8A4 /* ButtonCell.swift in Sources */,
 				8D8694B6273D813C009070FE /* TextLabelCell.swift in Sources */,
 				8D608D60273C862500D3D8A4 /* TextInputLoginCell.swift in Sources */,
+				8D36BB5A2740FC3100119611 /* SoundInfo.swift in Sources */,
 				8DC3EF7C273AD1A600CB518D /* AudioManager.swift in Sources */,
 				8DC3EF40273A76D500CB518D /* MarkerInfoView.swift in Sources */,
 				8DC76BBC2654316F0018D837 /* APIKey.swift in Sources */,
 				8DC3EF49273A76E100CB518D /* GooglePlace.swift in Sources */,
+				8D6A1EB6273FED620050D7BD /* PlayerView.swift in Sources */,
 				8DC76B93265424F00018D837 /* SignupViewController.swift in Sources */,
 				8DC3EF48273A76E100CB518D /* GoogleDataProvider.swift in Sources */,
-				8DC3EF4F273A773F00CB518D /* MapViewController.swift in Sources */,
 				8DC3EF86273AD52800CB518D /* APIRequest.swift in Sources */,
 				8D608D08273BEFB400D3D8A4 /* TextInputCell.swift in Sources */,
 				8DC76B8F265424F00018D837 /* AppDelegate.swift in Sources */,
@@ -466,6 +477,7 @@
 				8DC3EF4A273A76E100CB518D /* PlaceMarker.swift in Sources */,
 				8DC76BBD2654316F0018D837 /* APIUrl.swift in Sources */,
 				8D608D13273BF30B00D3D8A4 /* InputData.swift in Sources */,
+				8D85FB92273EA0E800201E7E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

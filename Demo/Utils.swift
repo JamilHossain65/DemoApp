@@ -14,6 +14,7 @@ let kPlaceholderBgColor = UIColor.init(red: 22/255.0, green: 23/255.0, blue: 28/
 let kTitleTextColor = UIColor.init(red: 196/255, green: 197/255, blue: 198/255, alpha: 1)
 let kYellowColor = UIColor.init(red: 255/255, green: 159/255, blue: 73/255, alpha: 1)
 
+//set aspect ration for various size ios devices
 let baseW:CGFloat = 320
 let baseH:CGFloat = 568
 
@@ -21,6 +22,17 @@ func log(_ msg: Any?) {
     #if DEBUG
     if let _msg = msg { print(String(describing: _msg)) }
     #endif
+}
+
+func showAlertOkay(title: String? = "", message:String? = "", completion: @escaping (Bool) -> () = {_ in}) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    //alert.view.tintColor = UIColor.hex_17181a()
+    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) in
+        completion(true)
+    }))
+
+    let window = UIApplication.shared.keyWindow
+    window?.rootViewController?.present(alert, animated: true, completion: nil)
 }
 
 func getAttributedText(_ mainText:String,_ targetedText:String,_  color:UIColor) -> NSMutableAttributedString {
