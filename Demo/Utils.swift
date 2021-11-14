@@ -64,6 +64,7 @@ func fetchDataForPage(_ index:Int, completion: @escaping([Data1]) -> ()) {
 //
 //}
 
+//MARK: - Extension
 extension UIView{
     func showProgressHUD(){
         let hud = MBProgressHUD.showAdded(to: self, animated: true)

@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var dataArray:[AnyObject] = []
+    let loginModel = LoginModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -144,9 +146,11 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             cell.didCompleteEdit = {textField in
                 switch textField?.tag {
                 case 0:
-                    print("tag\(textField?.text)")
+                    print("tag: \(textField?.text)")
+                    self.loginModel.email = textField?.text
                 default:
-                    print("tag\(textField?.text)")
+                    print("tag: \(textField?.text)")
+                    self.loginModel.password = textField?.text
                 }
             }
             return cell
@@ -165,19 +169,51 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             
             //action on button
             cell.onAction = { button in
-                print("login button action")
-                let storyboard: UIStoryboard = UIStoryboard.init(name: "Main",bundle: nil);
-                let viewController = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
-                self.navigationController?.pushViewController(viewController, animated: true)
+
+                /*
+                 let firebaseAuth = Auth.auth()
+             do {
+               try firebaseAuth.signOut()
+             } catch let signOutError as NSError {
+               print("Error signing out: %@", signOutError)
+             }
+                 */
+                let email    = self.loginModel.email    ?? ""
+                let password = self.loginModel.password ?? ""
+                
+                print("email:\(email)")
+                print("password:\(password)")
+                Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                  guard let strongSelf = self else { return }
+                    if error != nil {
+                        showAlertOkay(title: "Can' login", message: error?.localizedDescription , completion: {_ in})
+                    }else{
+                        //show map view
+                        self?.showMapView()
+                    }
+                }
             }
             
             return cell
         } else if data.isKind(of: FooterLoginCell.self){
             //Cell type footer
             let cell = tableView.dequeueReusableCell(withIdentifier: "FooterLoginCell", for: indexPath) as! FooterLoginCell
+            
+            //action on button
+            cell.onAction = { button in
+                //show signup view
+                self.navigationController?.popViewController(animated: false)
+            }
+            
             return cell
         }
         
         return UITableViewCell()
+    }
+    
+    func showMapView(){
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "Main",bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

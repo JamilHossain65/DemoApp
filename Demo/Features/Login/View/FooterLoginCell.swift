@@ -13,7 +13,9 @@ class FooterLoginCell: UITableViewCell {
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var agreeLabel: UILabel!
     @IBOutlet weak var termsLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
 
+    var onAction: ((_ button: UIButton) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +24,9 @@ class FooterLoginCell: UITableViewCell {
         
         //set color yellow
         termsLabel.attributedText = getAttributedText(termsLabel.text ?? "" , "登録はどちら", kYellowColor)
+    }
+    
+    @IBAction func buttonAction(sender:UIButton){
+        self.onAction?(sender)
     }
 }

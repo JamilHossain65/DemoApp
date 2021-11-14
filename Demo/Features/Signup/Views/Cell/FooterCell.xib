@@ -45,6 +45,14 @@
                                 <color key="textColor" red="0.76862745098039209" green="0.77254901960784317" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peF-0I-unS">
+                                <rect key="frame" x="247" y="123" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="buttonActionWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ano-Qd-TRD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
@@ -61,9 +69,10 @@
                 <outlet property="agreeLabel" destination="azH-4F-ZaW" id="TEu-iq-DxA"/>
                 <outlet property="bgView" destination="eru-jk-qSL" id="wlZ-4L-d1q"/>
                 <outlet property="dataLabel" destination="IbW-II-7pK" id="4NE-Xf-hKI"/>
+                <outlet property="nextButton" destination="peF-0I-unS" id="TgT-Qv-haw"/>
                 <outlet property="termsLabel" destination="yP4-fV-eMR" id="gGM-L8-d7z"/>
             </connections>
-            <point key="canvasLocation" x="151.19999999999999" y="124.13793103448276"/>
+            <point key="canvasLocation" x="150.40000000000001" y="124.13793103448276"/>
         </tableViewCell>
     </objects>
 </document>

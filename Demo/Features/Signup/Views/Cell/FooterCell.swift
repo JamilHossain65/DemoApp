@@ -9,10 +9,13 @@ import UIKit
 
 class FooterCell: UITableViewCell {
 
-    @IBOutlet weak var bgView   : UIView!
-    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var bgView    : UIView!
+    @IBOutlet weak var dataLabel : UILabel!
     @IBOutlet weak var agreeLabel: UILabel!
     @IBOutlet weak var termsLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    var onAction: ((_ button: UIButton) -> Void)?
 
     
     override func awakeFromNib() {
@@ -26,7 +29,7 @@ class FooterCell: UITableViewCell {
         termsLabel.attributedText = getAttributedText(termsLabel.text ?? "" , "ログイン", kYellowColor)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-   }
+    @IBAction func buttonAction(sender:UIButton){
+        self.onAction?(sender)
+    }
 }

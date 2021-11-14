@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 class SignupViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var dataArray:[AnyObject] = []
+    
+    let signupModel = SignupModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -149,10 +152,24 @@ extension SignupViewController: UITableViewDataSource, UITableViewDelegate{
             
             //action on button
             cell.onAction = { button in
-                print("create account action:")
-                let storyboard: UIStoryboard = UIStoryboard.init(name: "Main",bundle: nil);
-                let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-                self.navigationController?.pushViewController(viewController, animated: true)
+                self.view.showProgressHUD()
+                
+                let email = self.signupModel.email    ?? ""
+                let pass  = self.signupModel.password ?? ""
+                print("email:\(email)")
+                print("pass:\(pass)")
+                
+                
+                Auth.auth().createUser(withEmail: email, password:pass ) { authResult, error in
+                    self.view.hideProgressHUD()
+                    
+                    if error != nil {
+                        showAlertOkay(title: "Can' login", message: error?.localizedDescription , completion: {_ in})
+                    }else{
+                        self.showLoginView()
+                    }
+                }
+                
             }
             
             return cell
@@ -188,18 +205,36 @@ extension SignupViewController: UITableViewDataSource, UITableViewDelegate{
             cell.didCompleteEdit = {textField in
                 switch textField?.tag {
                 case 0:
-                    print("tag\(textField?.text)")
+                    print("name:\(textField?.text)")
+                    self.signupModel.name = textField?.text
+                case 1:
+                    print("email:\(textField?.text)")
+                    self.signupModel.email = textField?.text
                 default:
-                    print("tag\(textField?.text)")
+                    print("pass:\(textField?.text)")
+                    self.signupModel.password = textField?.text
                 }
             }
             return cell
         } else if data.isKind(of: FooterCell.self){
             //Cell type footer
             let cell = tableView.dequeueReusableCell(withIdentifier: "FooterCell", for: indexPath) as! FooterCell
+            
+            //action on button
+            cell.onAction = { button in
+                self.showLoginView()
+            }
+            
+            
             return cell
         }
         
         return UITableViewCell()
+    }
+    
+    func showLoginView(){
+        let storyboard: UIStoryboard = UIStoryboard.init(name: "Main",bundle: nil);
+        let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

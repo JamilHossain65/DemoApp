@@ -11,8 +11,14 @@ target 'Demo' do
   pod 'Alamofire-SwiftyJSON'
   pod 'MBProgressHUD'
   
+  #google map
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  
+  #firebase
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
   
   
 end

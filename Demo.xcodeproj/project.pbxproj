@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8A4ACB7DA1DD67E99FC2F298 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AEF0974D26B635898ADFDA /* Pods_Demo.framework */; };
 		8D36BB5A2740FC3100119611 /* SoundInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BB592740FC3100119611 /* SoundInfo.swift */; };
+		8D36BB7627415CF500119611 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D36BB7527415CF500119611 /* GoogleService-Info.plist */; };
+		8D36BB7D27415D2F00119611 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BB7B27415D2F00119611 /* FirebaseManager.swift */; };
+		8D36BBC227416B1400119611 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BBC127416B1400119611 /* LoginModel.swift */; };
+		8D36BBE82741720100119611 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36BBE72741720100119611 /* SignupModel.swift */; };
 		8D608D07273BEFB400D3D8A4 /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */; };
 		8D608D08273BEFB400D3D8A4 /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */; };
 		8D608D13273BF30B00D3D8A4 /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D608D12273BF30B00D3D8A4 /* InputData.swift */; };
@@ -58,6 +62,10 @@
 		3DB7E7E06AAA3B5598DF0EF2 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		46AEF0974D26B635898ADFDA /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D36BB592740FC3100119611 /* SoundInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundInfo.swift; sourceTree = "<group>"; };
+		8D36BB7527415CF500119611 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D36BB7B27415D2F00119611 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		8D36BBC127416B1400119611 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		8D36BBE72741720100119611 /* SignupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		8D608D05273BEFB300D3D8A4 /* TextInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputCell.xib; sourceTree = "<group>"; };
 		8D608D06273BEFB300D3D8A4 /* TextInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
 		8D608D12273BF30B00D3D8A4 /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
@@ -124,6 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D36BB7827415D2F00119611 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8D36BB7B27415D2F00119611 /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		8D608D52273C85BB00D3D8A4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +153,7 @@
 		8D608D53273C85F500D3D8A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8D36BBC127416B1400119611 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				8D608D12273BF30B00D3D8A4 /* InputData.swift */,
+				8D36BBE72741720100119611 /* SignupModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,12 +276,14 @@
 			children = (
 				8DC76BB42654316F0018D837 /* API */,
 				8DC3EF79273AD1A600CB518D /* Speech */,
+				8D36BB7827415D2F00119611 /* Firebase */,
 				8DC3EF4C273A773F00CB518D /* Features */,
 				8DC76B8E265424F00018D837 /* AppDelegate.swift */,
 				8DC76BB92654316F0018D837 /* Utils.swift */,
 				8DC76B94265424F00018D837 /* Main.storyboard */,
 				8DC76B97265424F10018D837 /* Assets.xcassets */,
 				8DC76B99265424F10018D837 /* LaunchScreen.storyboard */,
+				8D36BB7527415CF500119611 /* GoogleService-Info.plist */,
 				8DC76B9C265424F10018D837 /* Info.plist */,
 			);
 			path = Demo;
@@ -379,6 +399,7 @@
 				8D608D48273C219B00D3D8A4 /* FooterCell.xib in Resources */,
 				8DC76B96265424F00018D837 /* Main.storyboard in Resources */,
 				8D608D5D273C862500D3D8A4 /* TextInputLoginCell.xib in Resources */,
+				8D36BB7627415CF500119611 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +481,7 @@
 				8DC3EF49273A76E100CB518D /* GooglePlace.swift in Sources */,
 				8D6A1EB6273FED620050D7BD /* PlayerView.swift in Sources */,
 				8DC76B93265424F00018D837 /* SignupViewController.swift in Sources */,
+				8D36BB7D27415D2F00119611 /* FirebaseManager.swift in Sources */,
 				8DC3EF48273A76E100CB518D /* GoogleDataProvider.swift in Sources */,
 				8DC3EF86273AD52800CB518D /* APIRequest.swift in Sources */,
 				8D608D08273BEFB400D3D8A4 /* TextInputCell.swift in Sources */,
@@ -468,6 +490,7 @@
 				8DC3EF80273AD49C00CB518D /* Errors.swift in Sources */,
 				8DC76BC02654316F0018D837 /* Utils.swift in Sources */,
 				8DC76BCB26543CDA0018D837 /* DataCell.swift in Sources */,
+				8D36BBC227416B1400119611 /* LoginModel.swift in Sources */,
 				8DC3EF83273AD51400CB518D /* Response.swift in Sources */,
 				8D608D5F273C862500D3D8A4 /* LogoCell.swift in Sources */,
 				8D608D47273C219B00D3D8A4 /* FooterCell.swift in Sources */,
@@ -478,6 +501,7 @@
 				8DC76BBD2654316F0018D837 /* APIUrl.swift in Sources */,
 				8D608D13273BF30B00D3D8A4 /* InputData.swift in Sources */,
 				8D85FB92273EA0E800201E7E /* MapViewController.swift in Sources */,
+				8D36BBE82741720100119611 /* SignupModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +657,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaticsoft.BurmeseKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -654,7 +678,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaticsoft.BurmeseKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
