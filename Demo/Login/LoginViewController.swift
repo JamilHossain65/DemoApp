@@ -135,6 +135,8 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             cell.inputField.tag = indexPath.row
             cell.accesorryButton.isHidden = indexPath.row == 2 ? false:true
             cell.inputField.isSecureTextEntry = indexPath.row == 2 ? true:false
+            cell.inputField.keyboardType = indexPath.row == 1 ? .emailAddress:.default
+            
             
             //action on button
             cell.onAction = { button in
@@ -148,10 +150,8 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
                 switch textField?.tag {
                 case 1:
                     self.loginModel.email = textField?.text
-                    print("email: \(self.loginModel.email)")
                 default:
                     self.loginModel.password = textField?.text
-                    print("pass: \(self.loginModel.password)")
                 }
             }
             return cell
@@ -171,14 +171,6 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             //action on button
             cell.onAction = { button in
 
-                /*
-                 let firebaseAuth = Auth.auth()
-             do {
-               try firebaseAuth.signOut()
-             } catch let signOutError as NSError {
-               print("Error signing out: %@", signOutError)
-             }
-                 */
                 self.view.showProgressHUD()
                 if let email = self.loginModel.email, let pass = self.loginModel.password {
                     Auth.auth().signIn(withEmail: email, password: pass) { authResult, error in
@@ -192,10 +184,6 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
                         }
                     }
                 }
-                
-                
-                
-                
             }
             
             return cell
@@ -206,7 +194,7 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             //action on button
             cell.onAction = { button in
                 //show signup view
-                self.navigationController?.popViewController(animated: false)
+                self.navigationController?.popViewController(animated: true)
             }
             
             return cell

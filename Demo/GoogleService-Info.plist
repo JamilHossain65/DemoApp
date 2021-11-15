@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>885127679556-a8hkinrmhd13kqcklus4aa21kf34273b.apps.googleusercontent.com</string>
+	<string>522361038427-49u54vb529rtjsi0ug7mthjkeuuqa6pt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.885127679556-a8hkinrmhd13kqcklus4aa21kf34273b</string>
+	<string>com.googleusercontent.apps.522361038427-49u54vb529rtjsi0ug7mthjkeuuqa6pt</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCvM3tRfQEILg1LY6Cis_ZWCvRy_ZcNLIo</string>
+	<string>AIzaSyBTXmei5k-2qi6teXFq7GsmChYipZjYn1A</string>
 	<key>GCM_SENDER_ID</key>
-	<string>885127679556</string>
+	<string>522361038427</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.vaticsoft.BurmeseKeyboard</string>
+	<string>com.test.demo</string>
 	<key>PROJECT_ID</key>
-	<string>keyboard-d1a91</string>
+	<string>demoapp-63808</string>
 	<key>STORAGE_BUCKET</key>
-	<string>keyboard-d1a91.appspot.com</string>
+	<string>demoapp-63808.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:885127679556:ios:6bda6019c175935ad8b611</string>
-	<key>DATABASE_URL</key>
-	<string>https://keyboard-d1a91.firebaseio.com</string>
+	<string>1:522361038427:ios:554a4fdb2690423481017e</string>
 </dict>
 </plist>

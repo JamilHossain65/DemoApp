@@ -193,6 +193,8 @@ extension SignupViewController: UITableViewDataSource, UITableViewDelegate{
             cell.accesorryButton.isHidden = indexPath.row == 2 ? false:true
             cell.inputField.isSecureTextEntry = indexPath.row == 2 ? true:false
             
+            cell.inputField.keyboardType = indexPath.row == 1 ? .emailAddress:.default
+            
             //action on button
             cell.onAction = { button in
                 cell.inputField.isSecureTextEntry = button.isSelected
@@ -203,13 +205,10 @@ extension SignupViewController: UITableViewDataSource, UITableViewDelegate{
             cell.didCompleteEdit = {textField in
                 switch textField?.tag {
                 case 0:
-                    print("name:\(textField?.text)")
                     self.signupModel.name = textField?.text
                 case 1:
-                    print("email:\(textField?.text)")
                     self.signupModel.email = textField?.text
                 default:
-                    print("pass:\(textField?.text)")
                     self.signupModel.password = textField?.text
                 }
             }

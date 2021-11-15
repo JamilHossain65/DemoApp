@@ -5,6 +5,7 @@
 
 import UIKit
 import GoogleMaps
+import Firebase
 
 extension CLLocationCoordinate2D {
     func isEqual(_ coord: CLLocationCoordinate2D) -> Bool {
@@ -42,6 +43,18 @@ class MapViewController: UIViewController {
         //record audio
         audioManager.initAudio()
         audioManager.delegate = self
+    }
+    
+    @IBAction func logoutButtonAction(){
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            self.navigationController?.popViewController(animated: true)
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+            showAlertOkay(title: "Error!", message: signOutError.localizedDescription, completion: {_ in})
+        }
     }
     
     private func reverseGeocodeCoordinate(_ coordinate: CLLocationCoordinate2D) {
