@@ -193,10 +193,28 @@ extension LoginViewController: UITableViewDataSource, UITableViewDelegate{
             
             //action on button
             cell.onAction = { button in
-                //show signup view
-                self.navigationController?.popViewController(animated: true)
+                
+                switch button.tag {
+                case 0:
+                    print("gmail login")
+                    //todo, need implement
+                case 1:
+                    print("facebook login")
+                    //todo, need implement
+                case 2:
+                    print("twiter login")
+                    //todo, need implement
+                case 3:
+                    print("instagram login")
+                    //todo, need implement
+                case 4:
+                    print("line login")
+                    //todo, need implement
+                default:
+                    //show signup view
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
-            
             return cell
         }
         

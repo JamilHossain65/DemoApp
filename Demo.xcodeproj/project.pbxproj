@@ -194,14 +194,14 @@
 		8DC3EF3C273A76D500CB518D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D36BC432741991000119611 /* TextInputCell.swift */,
+				8D36BC3D2741990F00119611 /* TextInputCell.xib */,
 				8D36BC3F2741990F00119611 /* ButtonCell.swift */,
 				8D36BC422741991000119611 /* ButtonCell.xib */,
 				8D36BC3E2741990F00119611 /* DataCell.swift */,
 				8D36BC3C2741990F00119611 /* DataCell.xib */,
 				8D36BC402741991000119611 /* FooterCell.swift */,
 				8D36BC412741991000119611 /* FooterCell.xib */,
-				8D36BC432741991000119611 /* TextInputCell.swift */,
-				8D36BC3D2741990F00119611 /* TextInputCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
