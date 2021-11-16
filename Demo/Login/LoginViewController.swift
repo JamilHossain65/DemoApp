@@ -24,8 +24,6 @@ class LoginViewController: UIViewController {
         //test UI
         let window = UIApplication.shared.windows.last!
         let imageView = UIImageView(image: UIImage(named: "login")!)
-        
-        print("window::\(window.frame)")
         imageView.frame = window.frame
         imageView.alpha = 0.5
         self.view.addSubview(imageView)

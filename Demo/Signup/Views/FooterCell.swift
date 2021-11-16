@@ -27,6 +27,11 @@ class FooterCell: UITableViewCell {
         agreeLabel.attributedText = getAttributedText(agreeLabel.text ?? "" , "  I  ", kPlaceholderTextColor)
         
         termsLabel.attributedText = getAttributedText(termsLabel.text ?? "" , "ログイン", kYellowColor)
+        
+        //set font
+        dataLabel.font  = UIFont.systemFont(ofSize: 12.5.scalef())
+        agreeLabel.font = UIFont.systemFont(ofSize: 12.5.scalef())
+        termsLabel.font = UIFont.systemFont(ofSize: 12.5.scalef())
     }
 
     @IBAction func buttonAction(sender:UIButton){

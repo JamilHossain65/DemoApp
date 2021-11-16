@@ -27,6 +27,10 @@ class TextInputCell: UITableViewCell {
         inputField.backgroundColor = kPlaceholderBgColor
         inputField.textColor = kTitleTextColor
         
+        //set font
+        titleLabel.font = UIFont.systemFont(ofSize: 14.scalef())
+        inputField.font = UIFont.systemFont(ofSize: 14.scalef())
+        
         //coner radious
         //inputField.layer.cornerRadius = 10.0
         
@@ -38,10 +42,6 @@ class TextInputCell: UITableViewCell {
         inputField.delegate = self
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-   }
-    
     @IBAction func buttonAction(sender:UIButton){
         self.onAction?(sender)
     }

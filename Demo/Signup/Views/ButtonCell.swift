@@ -28,6 +28,9 @@ class ButtonCell: UITableViewCell {
             _titleButton.setTitle(selectedTitle, for: .selected)
             _titleButton.setTitleColor(kBgColor, for: .normal)
             
+            //set font
+            _titleButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16.scalef())
+            
 //            bgView.layer.borderWidth  = 0.0
 //            bgView.layer.cornerRadius = 10.0
 //            bgView.layer.borderColor = kBgColor.cgColor

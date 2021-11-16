@@ -24,6 +24,10 @@ class FooterLoginCell: UITableViewCell {
         
         //set color yellow
         termsLabel.attributedText = getAttributedText(termsLabel.text ?? "" , "登録はどちら", kYellowColor)
+        
+        //set font
+        dataLabel.font  = UIFont.systemFont(ofSize: 12.scalef())
+        termsLabel.font = UIFont.systemFont(ofSize: 12.scalef())
     }
     
     @IBAction func buttonAction(sender:UIButton){

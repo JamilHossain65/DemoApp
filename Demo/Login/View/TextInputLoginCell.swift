@@ -31,6 +31,8 @@ class TextInputLoginCell: UITableViewCell {
         inputField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: inputField.frame.size.height))
         inputField.leftViewMode = .always
         
+        //set font
+        inputField.font = UIFont.systemFont(ofSize: 14.scalef())
         //set delegate
         inputField.delegate = self
     }

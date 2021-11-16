@@ -14,5 +14,8 @@ class TextLabelCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = .clear
+        
+        //set font
+        textLbl.font = UIFont.boldSystemFont(ofSize: 13.scalef())
     }
 }

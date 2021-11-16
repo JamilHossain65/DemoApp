@@ -25,11 +25,7 @@ class SignupViewController: UIViewController {
         //ui test
         /*
         let window = UIApplication.shared.windows.last!
-            //= UIColor.init(patternImage: UIImage(named: "signup")!)
-        
         let imageView = UIImageView(image: UIImage(named: "signup")!)
-        
-        print("window::\(window.frame)")
         imageView.frame = window.frame
         imageView.alpha = 0.5
         self.view.addSubview(imageView)
@@ -62,6 +58,12 @@ class SignupViewController: UIViewController {
         
         //add input data mannually
         addDataMannually()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     func addDataMannually(){

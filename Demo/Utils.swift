@@ -86,6 +86,14 @@ extension Int{
     func scaleh() -> CGFloat {
         return CGFloat(self)*(UIScreen.main.bounds.height/baseH)
     }
+    
+    //for ipad
+    func scalef() -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            return CGFloat(self) * CGFloat(1.45)
+        }
+        return CGFloat(self) * CGFloat(1.0)
+    }
 }
 
 extension CGFloat{
@@ -96,6 +104,14 @@ extension CGFloat{
     func scaleh() -> CGFloat {
         return CGFloat(self)*(UIScreen.main.bounds.height/baseH)
     }
+    
+    //for ipad
+    func scalef() -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            return CGFloat(self) * CGFloat(1.45)
+        }
+        return CGFloat(self) * CGFloat(1.0)
+    }
 }
 
 extension Double{
@@ -105,5 +121,13 @@ extension Double{
     
     func scaleh() -> CGFloat {
         return CGFloat(self)*(UIScreen.main.bounds.height/baseH)
+    }
+    
+    //for ipad
+    func scalef() -> CGFloat {
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            return CGFloat(self) * CGFloat(1.45)
+        }
+        return CGFloat(self) * CGFloat(1.0)
     }
 }
